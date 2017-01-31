@@ -1,0 +1,502 @@
+html,
+body {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    font-family: "Open Sans", open-sans, sans-serif;
+}
+
+
+/* .page-registration,
+.page-registration div {
+    height: 100%
+}
+ */
+
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    height: inherit;
+    background-color: #222d32;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    background: #222d32;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+    left: 250px;
+}
+
+.page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    /*  padding: 15px; */
+}
+
+#wrapper.toggled .page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+.site_heading {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.site_sub_heading {
+    display: block;
+    font-size: 14px;
+    color: #eee;
+}
+
+
+/* Sidebar Styles */
+
+.aside-panel {
+    background: url('https://projects.invisionapp.com/assets/apps/d/img/login-signup/enterprise-panel-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 450px;
+    padding: 20px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.aside-panel-content h3 {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.aside-panel-content p {
+    font-size: 14px;
+}
+
+.aside-panel-heading {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    left: 0;
+    text-align: left;
+}
+
+.aside-panel-footer {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #222d32;
+}
+
+.sidebar-profile-block {
+    padding: 12px 0;
+}
+
+.sidebar-profile-block img {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+}
+
+.sidebar-profile-block:before,
+.sidebar-profile-block:after {
+    content: "";
+    clear: both;
+}
+
+.sidebar-profile-info {
+    display: inline-block;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.sidebar-profile-info .profile-title {
+    font-size: 16px;
+    color: #fff;
+}
+
+.sidebar-header {
+    color: #4b646f;
+    background: #1a2226;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #b8c7ce;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a.active {
+    text-decoration: none;
+    color: #fff;
+    background: #1e282c;
+    border-left-color: #1e282c;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 75px;
+    font-size: 18px;
+    line-height: 75px;
+    background: #ff396a;
+    text-align: center;
+}
+
+.sidebar-brand a {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+    #sidebar-wrapper {
+        width: 250px;
+        height: auto;
+        min-height: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+    .page-content-wrapper {
+        /* padding: 20px; */
+        position: relative;
+        background: #f3f3f3;
+    }
+    #wrapper.toggled .page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+    .navbar-brand {
+        padding: 20px 75px;
+    }
+    .navbar {
+        min-height: 60px;
+    }
+    .navbar-nav > li > a {
+        padding: 20px;
+    }
+    .navbar-form {
+        padding-top: 4px;
+    }
+}
+
+.navbar-custom {
+    background: #ff396a;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-login {
+    width: 305px;
+    padding: 0 10px;
+    padding-bottom: 0px;
+}
+
+
+/*bootstrap overwrite*/
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
+    background-color: #BB002E;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-inverse .navbar-toggle{
+    border-color: #BB002E
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+    background: #BB002E
+}
+.btn {
+    border-radius: 100px;
+}
+
+.btn-primary {
+    background: #F36;
+    border-color: #F36;
+}
+
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary.focus:active,
+.btn-primary:active:focus,
+.btn-primary:active:hover {
+    background: #BB002E;
+    border-color: #BB002E;
+}
+
+.btn-danger {
+    background: #222d32;
+    border-color: #222d32;
+}
+
+.btn-danger:focus,
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger.active.focus,
+.btn-danger.active:focus,
+.btn-danger.active:hover,
+.btn-danger.focus:active,
+.btn-danger:active:focus,
+.btn-danger:active:hover {
+    background: #1a2226;
+    border-color: #1a2226;
+}
+
+.button_type_1 {
+    display: inline-block;
+    margin: 20px auto;
+    background: #F36;
+    border-radius: 100px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 60px;
+    font-size: 12px;
+    color: #FFF;
+    cursor: pointer;
+    -webkit-transition: box-shadow .2s ease, border .2s ease;
+    transition: box-shadow .2s ease, border .2s ease;
+}
+
+.button_type_1:focus,
+.button_type_1:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .25);
+    color: #fff;
+}
+
+.button_type_2 {
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #C6CCD7;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 10px;
+    color: #596377;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 12px;
+    padding: 0 28px;
+    height: 36px;
+    line-height: 36px;
+    text-decoration: none;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.button_type_2:focus,
+.button_type_2:hover {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, .25);
+    background-color: #F36;
+    border: 1px solid #F36;
+}
+
+.button_small {
+    padding: 0 26px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    background-color: #1a2226;
+    border-color: #1a2226;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    color: #1a2226
+}
+
+#registrationForms .form-control {
+    border-color: #8C96A9;
+    background: transparent;
+    border-radius: 3px;
+    padding: 15px;
+    font-size: 14px;
+    color: #596377;
+    height: 50px;
+    line-height: 50px;
+}
+
+label {
+    color: #434C5E;
+}
+
+
+/*ui-datepicker*/
+
+.ui-widget-header {
+    background: #1a2226;
+    color: #fff;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: 1px solid #ff396a;
+    background: #ff396a;
+    font-weight: normal;
+    border-radius: 200%;
+    text-align: center;
+    line-height: 2.3;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    background: #BB002E;
+}
+
+
+/*helper class*/
+
+.nm {
+    margin: 0;
+}
+
+.np {
+    padding: 0;
+}
+
+.nb {
+    border: 0;
+}
+
+.nbr {
+    border-radius: 0;
+}
+
+.fb-blue {
+    color: #3b5998;
+}
+
+.tw-blue {
+    color: #0084b4;
+}
+
+.gplus-red {
+    color: #d34836;
+}
+
+.clearfix {
+    clear: both
+}
+
+.regi-panel__heading {
+    font-size: 28px;
+    font-weight: 400;
+    color: #434C5F;
+    margin-bottom: 50px;
+}
+
+.regi-panel__subheading {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #596377;
+}
+
+.singupForm,
+.getSinginForm,
+.forgotPasswordForm {
+    display: none;
+}
+
+.forgotPasswordForm .getSinginFormLink {
+    display: block;
+}
+
+.activeFrom {
+    display: block;
+}
+
+.inactiveFrom {
+    display: none;
+}

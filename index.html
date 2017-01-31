@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Registration</title>
+    <!-- jquery ui CSS -->
+    <link rel="stylesheet" href="assets/vendors/css/jquery-ui.min.css">
+    <!-- font-awesome Core CSS -->
+    <link rel="stylesheet" href="assets/vendors/css/font-awesome.min.css">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="assets/vendors/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-5 hidden-xs">
+                <div class="row">
+                    <div class="aside-panel">
+                        <div class="aside-panel-heading">
+                            <div class="pull-left"><img src="images/sitelogo.png" alt="" class="img-responsive" width="80px" /></div>
+                            <div class="pull-left text-left">
+                                <h1 class="site_heading">Site Name <small class="site_sub_heading">A Small intro</small></h1>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="aside-panel-content text-center">
+                            <h3>Some Information to user</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus in vitae dolorum, sed pariatur officia deserunt consectetur qui, repellendus impedit natus dignissimos quasi quae dolorem consequuntur neque. Nemo, quia, error.</p>
+                        </div>
+                        <div class="aside-panel-footer">
+                            <p class="text-center">
+                                <strong>Follow Us On</strong>
+                            </p>
+                            <ul class="list-inline text-center">
+                                <li>
+                                    <a href="#" class="fa-stack fa-2x">
+                                        <i class="fa fa-circle fa-stack-2x fb-blue"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fa-stack fa-2x">
+                                        <i class="fa fa-circle fa-stack-2x tw-blue"></i>
+                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fa-stack fa-2x">
+                                        <i class="fa fa-circle fa-stack-2x gplus-red"></i>
+                                        <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-7" id="registrationForms">
+                <div class="row">
+                    <div class="col-xs-12 getForms">
+                        <br>
+                        <p class="text-right getSingupForm">
+                            Don't have an account?
+                            <button class="btn button_type_2 ">Get Started</button>
+                        </p>
+                        <p class="text-right getSinginForm">
+                            Already have an account?
+                            <button class="btn button_type_2">Sign In</button>
+                        </p>
+                    </div>
+                    <!-- sign up form -->
+                    <div class="col-lg-7 singupForm ">
+                        <h2 class="regi-panel__heading">Sign up to sitename 
+                            <small class="regi-panel__subheading">Enter Your Details Below</small>
+                        </h2>
+                        <div w3-include-html="shared/signupform.html"></div>
+                    </div>
+                    <!-- sign up form ends-->
+                    <!-- sign in form -->
+                    <div class="col-lg-7 singinForm">
+                        <h2 class="regi-panel__heading">Sign up to sitename 
+                            <small class="regi-panel__subheading">Enter Your Details Below</small>
+                        </h2>
+                        <form action="" method="POST" role="form">
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" name="email" id="email" class="form-control" value="" required="required" pattern="" title="Email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="pull-left">Password</label> <span style="cursor: pointer;" class="pull-right getForgotPassword text-muted">Forgot Password ?</span>
+                                <input type="password" name="password" id="password" class="form-control" value="" required="required" pattern="" title="Password" placeholder="Password">
+                            </div>
+                            <div class="col-xs-12 text-center">
+                                <a href="userlist.html" class="btn button_type_1">Sign In</a>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- sign in form -->
+                    <!-- Forgot Password form -->
+                    <div class="col-lg-7 forgotPasswordForm">
+                        <h2 class="regi-panel__heading">Forgot Password
+                            <small class="regi-panel__subheading">Reset Password Link Sent to Your Registered Email</small>
+                        </h2>
+                        <form action="" method="POST" role="form">
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" name="email" id="email" class="form-control" value="" required="required" pattern="" title="Email" placeholder="Email">
+                            </div>
+                            <div class="col-xs-12 text-center">
+                                <button type="submit" class="btn button_type_1">Send Link</button>
+                                <span style="cursor: pointer;" class="getSinginFormLink">Back To login</span>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Forgot Password form ends -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#wrapper -->
+   <!-- jQuery -->
+    <script src="assets/vendors/js/w3data.js"></script>
+    <script src="assets/vendors/js/jquery.min.js"></script>
+    <script src="assets/vendors/js/jquery-ui.min.js"></script>
+    <script src="assets/vendors/js/jquery.dataTables.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="assets/vendors/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/js/dataTables.bootstrap.min.js"></script>
+    <!-- custom JavaScript -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
